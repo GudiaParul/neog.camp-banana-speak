@@ -1,0 +1,13 @@
+
+
+h1 {
+    text-align: center;
+    padding:2rem;
+    margin:2rem;
+    background-color : yellow;
+}
+
+button {
+    background-color: blue;
+    margin: 1rem;
+}
