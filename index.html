@@ -1,50 +1,57 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Banana speak</title>
-
-    <link rel="stylesheet" href="app.js" />   
-
-    <link href="style.css" rel="stylesheet" />  
-
     <style>
-
         
-
-        #txt-input{
-            height: 14vh;
-            width: 70%;
-            display: block;
-            margin: 1rem;
-            padding: 0.5rem;
+        body{
+            background-image: url("27839.jpg");
         }
 
-        #output {
-            height: 14vh;
-            width: 70%;
+        #txt-input{
+            margin-top: 3rem;
             display: block;
-            margin: 1rem;
-            padding: 0.5rem;
-            border: 1px solid black;
+            height:10vh;
+            width: 80%;
+            padding: 1rem;
+        }
+
+        #output{
+            border: solid black;
+            width: 80%;
+            height: 10vh;
+            padding: 1rem;
+            margin-top: 4rem; 
+        }
+
+        #funky-header{
+            height: 5rem;
+            padding-top: 2rem;
+            background-color: burlywood;
+        }
+
+        #header-font{
+            font-size: 2rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color:white;
+            margin: auto;
         }
     </style>
 
-    
-
+    <title>Banana speak</title>
 </head>
 <body>
-    <h1>Have fun! Speak bananaaaaaaa</h1>
-    
-    <textarea id="txt-input" placeholder="put your english sentence here and we will convert it into banana"></textarea>
-    <button id="btn-translate">Translate</button>
+    <div id = "funky-header">
+        <h1 id="header-font">Have fun with minions! Speak bananaaaaaaaaaaaaaaaaa!</h1>
+    </div>
+    <div><textarea placeholder = "Please enter text you want to be converted in banana." id = "txt-input"></textarea></div>
+    <button onclick="clickHandler()" id = "btn-translate">Translate</button>
 
-    <div style="font-size:large;">Translation will be here</div>
-    <div id="output"></div>
-    
-    <script src="app.js"  type="text/javascript"></script>
+    <div id = "output"></div>
 
+    <script src="app.js" type="text/javascript"></script>
 </body>
 </html>
